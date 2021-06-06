@@ -115,16 +115,21 @@ Find the .onion link at this directory inside the file 'hostname':
 
                   /var/lib/tor/hidden_service
                   
-You will use this address to add your Node to our list without exposing your ip.
 
 Use this command to get your enode:// address. 
 
              admin.nodeInfo
+             
+And 
+
+             curl --socks5 127.0.0.1:9050 http://checkip.amazonaws.com/
+             
+will give you your Tor ip address that will be shared.
 
 
 Now connect your node to our private network with
 
-            admin.addPeer(“OUR NODES”):
+            admin.addPeer("OUR NODES"):
 
   
 To get our private nodes address list please refer to the discord server.
