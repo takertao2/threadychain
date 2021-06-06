@@ -117,10 +117,15 @@ Find the .onion link at this directory inside the file 'hostname':
                   
 You will use this address to add your Node to our list without exposing your ip.
 
+Use this command to get your enode:// address. 
+
+             admin.nodeInfo
+
 
 Now connect your node to our private network with
 
             admin.addPeer(“OUR NODES”):
+
   
 To get our private nodes address list please refer to the discord server.
 To run the nodes in other systems please join us in the discord for enquires. 
