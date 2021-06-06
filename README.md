@@ -65,7 +65,7 @@ run:
 
             personal.newAccount()
 
-A wallet will be generate, with a password prompt, save this wallet and remember your password.
+A wallet will be generate, with a password prompt, save this wallet and remember your password. Open another terminal as you will need to do a bit more configuration.
 
 Now you need to install Tor in your command-line so you won't expose your real IP.
 
@@ -116,7 +116,7 @@ Find the .onion link at this directory inside the file 'hostname':
                   /var/lib/tor/hidden_service
                   
 
-Use this command to get your enode:// address. 
+Use this command to get your enode:// address in the javascript prompt. 
 
              admin.nodeInfo
              
@@ -127,7 +127,7 @@ And
 will give you your Tor ip address that will be shared.
 
 
-Now connect your node to our private network with
+Now connect your node to our private network with in the javascript prompt
 
             admin.addPeer("OUR NODES"):
 
