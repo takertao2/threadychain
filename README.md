@@ -115,6 +115,8 @@ Find the .onion link at this directory inside the file 'hostname':
 
                   /var/lib/tor/hidden_service
                   
+This hostname will like somethine like ijiqkas001koksjd.onion, it will be used to share your node safely. 
+                  
 
 Use this command to get your enode:// address in the javascript prompt. 
 
@@ -124,13 +126,28 @@ And
 
              curl --socks5 127.0.0.1:9050 http://checkip.amazonaws.com/
              
-will give you your Tor ip address that will be shared.
+will give you your Tor ip address to make sure you are connected to Tor.
 
 
 Now connect your node to our private network with in the javascript prompt
 
             admin.addPeer("OUR NODES"):
 
+
+I need to add mode details on how to connect the nodes between each other upon testing.
+
+To mine use:
+
+            miner.start()
+            
+In the javascript prompt.
+And to limit your CPU usage (you will want to do this) use:
+
+            apt-get install cpulimit
+            cpulimit -e geth -l 30
+            
+This will limit geth to 30% cpu usage, feel free to make it however you fee like. This command will be running continually so you will need to open another terminal window if need. I might find a way to run it on background later.
+            
   
 To get our private nodes address list please refer to the discord server.
 To run the nodes in other systems please join us in the discord for enquires. 
