@@ -45,7 +45,7 @@ Create or download the file *Genesis.json* found in this git.
 
 run:
 
-            geth --identity “YOU_NODE_NAME” init /YOUR_DIRECTORY/Genesis.json --datadir /YOUR_DIRECTORY/data/YOUR_NODE_NAME
+            geth --identity “YOUR_NODE_NAME” init /YOUR_DIRECTORY/Genesis.json --datadir /YOUR_DIRECTORY/data/YOUR_NODE_NAME
   
   
 The above commands will setup the genesis block in your node.
@@ -96,25 +96,26 @@ eg.
 Restart Tor and you should be safe. 
 
             service tor restart
+            
 Additionally setup a router/firewall on linux to make sure your IP won't leak:
-Go back to your root folder with "cd".
+Go back to your root folder with "cd". And do:
 
             git clone https://github.com/ruped24/toriptables2.git
             cd toriptables2
             sudo ./toriptables2.py -l
             # use ‘-f’ to deactivate
             
-Now test your connection
+Now test your connection:
 
             curl --socks5 localhost:9050 --socks5-hostname localhost:9050 -s https://check.torproject.org/ | cat | grep -m 1 Congratulations | xargs
             
 You should receive the following reply: "Congratulations. This browser is configured to use Tor".
 
-Find .onion link at this directory inside the file 'hostname':
+Find the .onion link at this directory inside the file 'hostname':
 
                   /var/lib/tor/hidden_service
                   
-You will use this address to add your Node to our list.
+You will use this address to add your Node to our list without exposing your ip.
 
 
 Now connect your node to our private network with
