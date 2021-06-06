@@ -52,7 +52,7 @@ The above commands will setup the genesis block in your node.
 
 To start your node run:
 
-            geth --http --http.port "8080" --datadir /YOUR_DIRECTORY/data/YOUR_NODE_NAME --networkid 1337 --nodiscover
+            geth --http --http.port "8085" --datadir /YOUR_DIRECTORY/data/YOUR_NODE_NAME --networkid 1337 --nodiscover
 
 This code will run the node and start the blockchain.
 
