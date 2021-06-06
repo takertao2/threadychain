@@ -73,7 +73,7 @@ on linux/WSL do:
 
             sudo apt-get install tor
             
-now you need to edit the torrc file.
+You need to edit the torrc file.
 
 depending on your configuration you will find the torrc file here:
 
@@ -93,17 +93,17 @@ eg.
 
             sudo nano /etc/tor/torrc
  
-Now restart Tor and you should be safe. 
+Restart Tor and you should be safe. 
 
             service tor restart
 
-Now you should be able to find your own .onion link at ths directory inside the file 'hostname':
+You should be able to find your own .onion link at ths directory inside the file 'hostname':
 
                   /var/lib/tor/hidden_service
    
 
 
-Now you need to connect your node to our private network with
+Now connect your node to our private network with
 
             admin.addPeer(“OUR NODES”):
   
