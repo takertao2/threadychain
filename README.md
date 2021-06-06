@@ -102,7 +102,7 @@ Now you need to connect your node to our private network with
 
             admin.addPeer(“OUR NODES”):
   
-To get our private nodes adress please refer to the discord server.
+To get our private nodes adress list please refer to the discord server.
 To run the nodes in other systems please join us in the discord for enquires. 
 
 https://discord.gg/X3dhxCV5gz
