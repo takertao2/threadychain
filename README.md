@@ -96,18 +96,32 @@ eg.
 Restart Tor and you should be safe. 
 
             service tor restart
+Additionally setup a router/firewall on linux to make sure your IP won't leak:
+Go back to your root folder with "cd".
 
-You should be able to find your own .onion link at ths directory inside the file 'hostname':
+            git clone https://github.com/ruped24/toriptables2.git
+            cd toriptables2
+            sudo ./toriptables2.py -l
+            # use ‘-f’ to deactivate
+            
+Now test your connection
+
+            curl --socks5 localhost:9050 --socks5-hostname localhost:9050 -s https://check.torproject.org/ | cat | grep -m 1 Congratulations | xargs
+            
+You should receive the following reply: "Congratulations. This browser is configured to use Tor".
+
+Find .onion link at this directory inside the file 'hostname':
 
                   /var/lib/tor/hidden_service
-   
+                  
+You will use this address to add your Node to our list.
 
 
 Now connect your node to our private network with
 
             admin.addPeer(“OUR NODES”):
   
-To get our private nodes adress list please refer to the discord server.
+To get our private nodes address list please refer to the discord server.
 To run the nodes in other systems please join us in the discord for enquires. 
 
 https://discord.gg/X3dhxCV5gz
