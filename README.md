@@ -97,6 +97,11 @@ Now restart Tor and you should be safe.
 
             service tor restart
 
+Now you should be able to find your own .onion link at ths directory inside the file 'hostname':
+
+                  /var/lib/tor/hidden_service
+   
+
 
 Now you need to connect your node to our private network with
 
