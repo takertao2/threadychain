@@ -152,6 +152,7 @@ This will limit geth to 30% cpu usage, feel free to make it however you fee like
 To get our private nodes address list please refer to the discord server.
 To run the nodes in other systems please join us in the discord for enquires. 
 
+contact on twitter @kinuhero for more info.
 
 
   
